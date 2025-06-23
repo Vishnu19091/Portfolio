@@ -7,10 +7,10 @@ import Skills from "@/components/skills";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 
 // show server status
-const serverStatus: boolean = false;
+const ShowStatus: boolean = false;
 
 export default function Home() {
-  if (serverStatus) {
+  if (ShowStatus) {
     return (
       <div id="home">
         <Hero />
@@ -26,7 +26,7 @@ export default function Home() {
     <h1
       className={`${FriendlyStrangerFont.className} text-red-600 pt-20 text-center my-90 text-6xl`}
     >
-      Server is Down. Comeback later 😔
+      Project is under development.
     </h1>
   );
 }
