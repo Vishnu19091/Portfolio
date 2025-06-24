@@ -1,9 +1,10 @@
-import About from "@/components/About";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
+import About from "@/components/UI/About";
+import Contact from "@/components/UI/contact";
+import Education from "@/components/UI/education";
+import Experience from "@/components/UI/experience";
 import Hero from "@/components/Hero/Hero";
-import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+import Projects from "@/components/UI/projects";
+import Skills from "@/components/UI/skills";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 
 // show server status
@@ -12,11 +13,12 @@ const ShowStatus: boolean = false;
 export default function Home() {
   if (ShowStatus) {
     return (
-      <div id="home">
+      <div>
         <Hero />
         <About />
         <Skills />
         <Projects />
+        <Education />
         <Experience />
         <Contact />
       </div>
