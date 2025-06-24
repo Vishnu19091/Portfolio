@@ -18,13 +18,13 @@ export default function NavBar() {
 
   return (
     <div className="w-full">
-      <div className="mobile:w-[80%] tablet:w-fit desktop:w-fit bottom-6 block fixed left-[50%] -translate-x-[50%] bg-black/30 dark:bg-white/10 rounded-2xl px-8 py-2 backdrop-blur-xl mx-auto">
+      <div className="mobile:w-[80%] tablet:w-fit desktop:w-fit bottom-6 block fixed left-[50%] -translate-x-[50%] bg-black/30 dark:bg-white/10 rounded-2xl px-6 py-1 backdrop-blur-xl mx-auto">
         <ul className="flex flex-row gap-4 items-center justify-center">
           {/* HOME */}
           <li className="hover:scale-110 transition-all duration-300">
             <Link href={"#home"}>
               <Tooltip message="Home">
-                <img src="/assets/home.svg" alt="Home" className="w-8 h-8" />
+                <img src="/assets/home.svg" alt="Home" className="w-5 h-5" />
               </Tooltip>
             </Link>
           </li>
@@ -33,7 +33,7 @@ export default function NavBar() {
           <li className="hover:scale-110 transition-all duration-300">
             <Link href={"#about"}>
               <Tooltip message="About">
-                <img src="/assets/about.svg" alt="About" className="h-8 w-8" />
+                <img src="/assets/about.svg" alt="About" className="h-6 w-6" />
               </Tooltip>
             </Link>
           </li>
@@ -43,7 +43,7 @@ export default function NavBar() {
             <Link href={"#skills"}>
               <Tooltip message="Skills">
                 <img
-                  className="h-8 w-8"
+                  className="h-7 w-7"
                   src="/assets/skills.svg"
                   alt="Skills"
                 />
@@ -56,7 +56,7 @@ export default function NavBar() {
             <Link href={"#projects"}>
               <Tooltip message="Projects">
                 <img
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   src="/assets/projects.svg"
                   alt="Projects"
                 />
@@ -69,7 +69,7 @@ export default function NavBar() {
             <Link href={"#education"}>
               <Tooltip message="Education">
                 <img
-                  className="h-8 w-8"
+                  className="h-[1.8rem] w-[1.8rem]"
                   src="/assets/education.svg"
                   alt="Education"
                 />
@@ -82,7 +82,7 @@ export default function NavBar() {
             <Link href={"#experience"}>
               <Tooltip message="Experience">
                 <img
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   src="/assets/experience.svg"
                   alt="Experience"
                 />
@@ -95,7 +95,7 @@ export default function NavBar() {
             <Link href={"#contact"}>
               <Tooltip message="Contact">
                 <img
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   src="/assets/contact.svg"
                   alt="Contact"
                 />
@@ -108,8 +108,8 @@ export default function NavBar() {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="outline" size="icon">
-                    <Sun className="h-8 w-8 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-                    <Moon className="absolute h-8 w-8 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+                    <Sun className="h-5 w-5 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+                    <Moon className="absolute h-5 w-5 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
                     <span className="sr-only">Toggle theme</span>
                   </Button>
                 </DropdownMenuTrigger>
