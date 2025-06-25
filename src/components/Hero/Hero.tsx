@@ -6,7 +6,10 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col w-full mx-auto min-h-screen text-center items-center justify-center">
+    <section
+      id="home"
+      className="flex flex-col w-full mx-auto min-h-screen text-center items-center justify-center"
+    >
       <h1
         className={`${FriendlyStrangerFont.className} mobile:text-5xl desktop:text-8xl font-bold mb-4`}
       >
@@ -35,7 +38,7 @@ export default function Hero() {
         </span>
       </h2>
 
-      <p className="text-md md:text-lg max-w-xl text-gray-500 dark:text-gray-400">
+      <p className="text-md desktop:text-lg max-w-xl text-black/70 dark:text-gray-300">
         I build fast, scalable, and user-friendly web applications using modern
         technologies and also learn & experiment stuff about AI.
       </p>

@@ -3,6 +3,7 @@ import { Ubuntu_Sans_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar/NavigationBar";
 import { ThemeProvider } from "@/components/theme-provider";
+import SocialsBar from "@/components/SocialsBar/SocialsBar";
 
 const ubuntu_Sans_Mono = Ubuntu_Sans_Mono({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <SocialsBar />
           <NavBar />
         </ThemeProvider>
       </body>

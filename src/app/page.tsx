@@ -7,7 +7,7 @@ import Projects from "@/components/UI/projects";
 import Skills from "@/components/UI/skills";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 
-// show server status
+// show status
 const ShowStatus: boolean = false;
 
 export default function Home() {

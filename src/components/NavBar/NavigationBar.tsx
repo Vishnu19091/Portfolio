@@ -1,9 +1,9 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import Tooltip from "./tooltip";
-import { icons, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import {
   DropdownMenu,
@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Button } from "../ui/button";
+import "./NavBar.css";
 
 export default function NavBar() {
   const { setTheme } = useTheme();
@@ -22,25 +23,35 @@ export default function NavBar() {
         <ul className="flex flex-row gap-4 items-center justify-center">
           {/* HOME */}
           <li className="hover:scale-110 transition-all duration-300">
-            <Link href={"#home"}>
+            <ScrollLink activeClass="active" smooth={true} spy={true} to="home">
               <Tooltip message="Home">
                 <img src="/assets/home.svg" alt="Home" className="w-5 h-5" />
               </Tooltip>
-            </Link>
+            </ScrollLink>
           </li>
 
           {/* ABOUT */}
           <li className="hover:scale-110 transition-all duration-300">
-            <Link href={"#about"}>
+            <ScrollLink
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              to="about"
+            >
               <Tooltip message="About">
                 <img src="/assets/about.svg" alt="About" className="h-6 w-6" />
               </Tooltip>
-            </Link>
+            </ScrollLink>
           </li>
 
           {/* SKILLS */}
           <li className="hover:scale-110 transition-all duration-300">
-            <Link href={"#skills"}>
+            <ScrollLink
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              to="skills"
+            >
               <Tooltip message="Skills">
                 <img
                   className="h-7 w-7"
@@ -48,12 +59,17 @@ export default function NavBar() {
                   alt="Skills"
                 />
               </Tooltip>
-            </Link>
+            </ScrollLink>
           </li>
 
           {/* PROJECTS */}
           <li className="hover:scale-110 transition-all duration-300">
-            <Link href={"#projects"}>
+            <ScrollLink
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              to="projects"
+            >
               <Tooltip message="Projects">
                 <img
                   className="h-6 w-6"
@@ -61,12 +77,17 @@ export default function NavBar() {
                   alt="Projects"
                 />
               </Tooltip>
-            </Link>
+            </ScrollLink>
           </li>
 
           {/* EDUCATION */}
           <li className="hover:scale-110 transition-all duration-300">
-            <Link href={"#education"}>
+            <ScrollLink
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              to="education"
+            >
               <Tooltip message="Education">
                 <img
                   className="h-[1.8rem] w-[1.8rem]"
@@ -74,12 +95,17 @@ export default function NavBar() {
                   alt="Education"
                 />
               </Tooltip>
-            </Link>
+            </ScrollLink>
           </li>
 
           {/* EXPERIENCE */}
           <li className="hover:scale-110 transition-all duration-300">
-            <Link href={"#experience"}>
+            <ScrollLink
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              to="experience"
+            >
               <Tooltip message="Experience">
                 <img
                   className="h-6 w-6"
@@ -87,12 +113,17 @@ export default function NavBar() {
                   alt="Experience"
                 />
               </Tooltip>
-            </Link>
+            </ScrollLink>
           </li>
 
           {/* CONTACT */}
           <li className="hover:scale-110 transition-all duration-300">
-            <Link href={"#contact"}>
+            <ScrollLink
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              to="contact"
+            >
               <Tooltip message="Contact">
                 <img
                   className="h-6 w-6"
@@ -100,7 +131,7 @@ export default function NavBar() {
                   alt="Contact"
                 />
               </Tooltip>
-            </Link>
+            </ScrollLink>
           </li>
 
           <li>

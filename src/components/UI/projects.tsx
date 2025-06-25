@@ -3,7 +3,7 @@ import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 export default function Projects() {
   return (
     <article
-      className="min-h-screen pt-10 mx-auto flex flex-col gap-10 desktop:w-[65%] desktop:mx-auto"
+      className="min-h-screen pt-15 mx-auto flex flex-col gap-10 desktop:w-[65%] desktop:mx-auto"
       id="projects"
     >
       <div className="flex flex-row gap-5 desktop:gap-10 items-center">

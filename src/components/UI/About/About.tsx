@@ -4,7 +4,7 @@ import About_Info from "./About_details";
 export default function About() {
   return (
     <article
-      className="min-h-screen pt-10 mx-auto flex flex-col gap-10 desktop:w-[65%] desktop:mx-auto"
+      className="min-h-[80vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[65%] desktop:mx-auto"
       id="about"
     >
       <div className="flex flex-row gap-5 desktop:gap-10 items-center">
