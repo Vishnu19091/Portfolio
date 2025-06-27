@@ -8,7 +8,7 @@ import Skills from "@/components/UI/skills/skills";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 
 // show status
-const ShowStatus: boolean = true;
+const ShowStatus: boolean = false;
 
 export default function Home() {
   if (ShowStatus) {
