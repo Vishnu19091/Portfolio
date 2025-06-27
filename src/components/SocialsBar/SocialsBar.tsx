@@ -34,7 +34,7 @@ export default function SocialsBar() {
   const isMobile: boolean = width <= 360;
 
   const bar: JSX.Element = (
-    <div className="w-full bg-black dark:bg-white h-px" />
+    <div className="w-full bg-black dark:bg-white h-[1.5px]" />
   );
 
   return (

@@ -1,14 +1,14 @@
 import About from "@/components/UI/About/About";
 import Contact from "@/components/UI/contact";
-import Education from "@/components/UI/education";
-import Experience from "@/components/UI/experience";
+// import Education from "@/components/UI/education";
+// import Experience from "@/components/UI/experience";
 import Hero from "@/components/Hero/Hero";
-import Projects from "@/components/UI/projects";
-import Skills from "@/components/UI/skills";
+import Projects from "@/components/UI/Projects/projects";
+import Skills from "@/components/UI/skills/skills";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 
 // show status
-const ShowStatus: boolean = false;
+const ShowStatus: boolean = true;
 
 export default function Home() {
   if (ShowStatus) {
@@ -18,8 +18,8 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
-        <Education />
-        <Experience />
+        {/* <Education />
+        <Experience /> */}
         <Contact />
       </div>
     );

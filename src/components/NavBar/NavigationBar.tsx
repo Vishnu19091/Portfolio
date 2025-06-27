@@ -22,16 +22,20 @@ export default function NavBar() {
       <div className="mobile:w-[80%] tablet:w-fit desktop:w-fit bottom-6 block fixed left-[50%] -translate-x-[50%] bg-black/30 dark:bg-white/10 rounded-2xl px-6 py-1 backdrop-blur-xl mx-auto">
         <ul className="flex flex-row gap-4 items-center justify-center">
           {/* HOME */}
-          <li className="hover:scale-110 transition-all duration-300">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
             <ScrollLink activeClass="active" smooth={true} spy={true} to="home">
               <Tooltip message="Home">
-                <img src="/assets/home.svg" alt="Home" className="w-5 h-5" />
+                <img
+                  src="/assets/navbar/home.svg"
+                  alt="Home"
+                  className="w-5 h-5"
+                />
               </Tooltip>
             </ScrollLink>
           </li>
 
           {/* ABOUT */}
-          <li className="hover:scale-110 transition-all duration-300">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
             <ScrollLink
               activeClass="active"
               smooth={true}
@@ -39,13 +43,17 @@ export default function NavBar() {
               to="about"
             >
               <Tooltip message="About">
-                <img src="/assets/about.svg" alt="About" className="h-6 w-6" />
+                <img
+                  src="/assets/navbar/about.svg"
+                  alt="About"
+                  className="h-6 w-6"
+                />
               </Tooltip>
             </ScrollLink>
           </li>
 
           {/* SKILLS */}
-          <li className="hover:scale-110 transition-all duration-300">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
             <ScrollLink
               activeClass="active"
               smooth={true}
@@ -55,7 +63,7 @@ export default function NavBar() {
               <Tooltip message="Skills">
                 <img
                   className="h-7 w-7"
-                  src="/assets/skills.svg"
+                  src="/assets/navbar/skills.svg"
                   alt="Skills"
                 />
               </Tooltip>
@@ -63,7 +71,7 @@ export default function NavBar() {
           </li>
 
           {/* PROJECTS */}
-          <li className="hover:scale-110 transition-all duration-300">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
             <ScrollLink
               activeClass="active"
               smooth={true}
@@ -73,7 +81,7 @@ export default function NavBar() {
               <Tooltip message="Projects">
                 <img
                   className="h-6 w-6"
-                  src="/assets/projects.svg"
+                  src="/assets/navbar/projects.svg"
                   alt="Projects"
                 />
               </Tooltip>
@@ -81,7 +89,7 @@ export default function NavBar() {
           </li>
 
           {/* EDUCATION */}
-          <li className="hover:scale-110 transition-all duration-300">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
             <ScrollLink
               activeClass="active"
               smooth={true}
@@ -91,7 +99,7 @@ export default function NavBar() {
               <Tooltip message="Education">
                 <img
                   className="h-[1.8rem] w-[1.8rem]"
-                  src="/assets/education.svg"
+                  src="/assets/navbar/education.svg"
                   alt="Education"
                 />
               </Tooltip>
@@ -99,7 +107,7 @@ export default function NavBar() {
           </li>
 
           {/* EXPERIENCE */}
-          <li className="hover:scale-110 transition-all duration-300">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
             <ScrollLink
               activeClass="active"
               smooth={true}
@@ -109,7 +117,7 @@ export default function NavBar() {
               <Tooltip message="Experience">
                 <img
                   className="h-6 w-6"
-                  src="/assets/experience.svg"
+                  src="/assets/navbar/experience.svg"
                   alt="Experience"
                 />
               </Tooltip>
@@ -117,7 +125,7 @@ export default function NavBar() {
           </li>
 
           {/* CONTACT */}
-          <li className="hover:scale-110 transition-all duration-300">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
             <ScrollLink
               activeClass="active"
               smooth={true}
@@ -127,7 +135,7 @@ export default function NavBar() {
               <Tooltip message="Contact">
                 <img
                   className="h-6 w-6"
-                  src="/assets/contact.svg"
+                  src="/assets/navbar/contact.svg"
                   alt="Contact"
                 />
               </Tooltip>
@@ -138,20 +146,33 @@ export default function NavBar() {
             <Tooltip message="Change Theme">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="icon">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="cursor-pointer"
+                  >
                     <Sun className="h-5 w-5 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
                     <Moon className="absolute h-5 w-5 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
                     <span className="sr-only">Toggle theme</span>
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={() => setTheme("light")}>
+                  <DropdownMenuItem
+                    className="cursor-pointer"
+                    onClick={() => setTheme("light")}
+                  >
                     Light
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setTheme("dark")}>
+                  <DropdownMenuItem
+                    className="cursor-pointer"
+                    onClick={() => setTheme("dark")}
+                  >
                     Dark
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setTheme("system")}>
+                  <DropdownMenuItem
+                    className="cursor-pointer"
+                    onClick={() => setTheme("system")}
+                  >
                     System
                   </DropdownMenuItem>
                 </DropdownMenuContent>
