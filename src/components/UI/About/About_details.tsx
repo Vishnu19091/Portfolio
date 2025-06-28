@@ -26,7 +26,7 @@ const about_details: JSX.Element = (
 
     <Reveal>
       <p>
-        I enjoy continuous learning and adapting to new technologies. And I
+        I enjoy continuous learning and adapting to new technologies. And I{" "}
         <span id="highlight">
           love building fast, scalable, and user-friendlyweb applications
         </span>{" "}
