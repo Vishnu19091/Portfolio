@@ -1,6 +1,8 @@
+"use client";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 import SkillCard from "./skillcard";
 import Tooltip from "@/components/NavBar/tooltip";
+import { Reveal } from "@/components/Reveal";
 
 const skills = [
   {
@@ -345,30 +347,35 @@ const Tools = [
 export default function Skills() {
   return (
     <article
-      className="min-h-screen pt-15 mx-auto flex flex-col gap-10 desktop:w-[65%] desktop:mx-auto"
+      className="mobile:min-h-[50vh] lmobile:min-h-[50vh] tablet:min-h-[40vh] desktop:min-h-[80vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[75%] desktop:mx-auto"
       id="skills"
     >
       <div className="flex flex-row-reverse gap-5 desktop:gap-10 items-center">
         <h3>
           <div className="position:relative;width:fit-content;overflow:hidden">
             <div className="opacity: 1; transform: none;">
-              <span
-                className={`${FriendlyStrangerFont.className} text-red-600 text-5xl desktop:text-8xl`}
-              >
-                Skills
-              </span>
+              <Reveal>
+                <span
+                  className={`${FriendlyStrangerFont.className} text-red-600 mobile:text-4xl desktop:text-[4.5rem]`}
+                >
+                  Skills
+                </span>
+              </Reveal>
             </div>
             <div className="position: absolute; inset: 4px 0px 4px 100%; background: var(--brand); z-index: 20;"></div>
           </div>
         </h3>
         <div className="w-full bg-black dark:bg-white h-px"></div>
       </div>
-      <section className="grid grid-cols-1 gap-10">
+
+      <section className="grid grid-cols-1 gap-10 justify-center">
         <div className="flex flex-col justify-center items-center gap-4">
-          <h1 className="text-red-600 mobile:text-2xl desktop:text-4xl">
-            Professional Skills
-          </h1>
-          <div className="mobile:w-full mobile:items-center desktop:w-3/4 mx-auto flex mobile:flex-col desktop:flex-row gap-4">
+          <Reveal>
+            <h1 className="text-red-600 mobile:text-2xl desktop:text-4xl">
+              Professional Skills
+            </h1>
+          </Reveal>
+          <div className="mobile:w-full mobile:items-center desktop:w-full mx-auto flex mobile:flex-col desktop:flex-row flex-wrap justify-center gap-5">
             {skills.map((skill, index) => (
               <SkillCard key={index} icon={skill.icon} />
             ))}
@@ -376,10 +383,12 @@ export default function Skills() {
         </div>
 
         <div className="flex flex-col justify-center items-center gap-4">
-          <h1 className="text-red-600 mobile:text-2xl desktop:text-4xl">
-            Tools I use
-          </h1>
-          <div className="mobile:w-full mobile:items-center desktop:w-3/4 mx-auto flex mobile:flex-col desktop:flex-row gap-4">
+          <Reveal>
+            <h1 className="text-red-600 mobile:text-2xl desktop:text-4xl">
+              Tools I use
+            </h1>
+          </Reveal>
+          <div className="mobile:w-full mobile:items-center desktop:w-full mx-auto flex mobile:flex-col desktop:flex-row flex-wrap justify-center gap-5">
             {Tools.map((tool, index) => (
               <SkillCard key={index} icon={tool.icon} />
             ))}

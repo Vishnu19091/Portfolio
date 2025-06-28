@@ -19,7 +19,7 @@ export default function NavBar() {
 
   return (
     <div className="w-full">
-      <div className="mobile:w-[80%] tablet:w-fit desktop:w-fit bottom-6 block fixed left-[50%] -translate-x-[50%] bg-black/30 dark:bg-white/10 rounded-2xl px-6 py-1 backdrop-blur-xl mx-auto">
+      <div className="mobile:w-[80%] tablet:w-fit desktop:w-fit bottom-6 block fixed left-[50%] -translate-x-[50%] bg-black/30 dark:bg-white/10 rounded-2xl px-6 py-1 backdrop-blur-xl z-30 mx-auto">
         <ul className="flex flex-row gap-4 items-center justify-center">
           {/* HOME */}
           <li className="hover:scale-110 transition-all duration-300 cursor-pointer">

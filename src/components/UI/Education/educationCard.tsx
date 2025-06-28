@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/Reveal";
 import Image from "next/image";
 
 interface CardProp {
@@ -20,12 +21,15 @@ export default function EducationCard({
       <div>
         <Image src={imgurl} alt={name} width={100} height={100}></Image>
       </div>
-      <div className="flex flex-col gap-2 mobile:text-md desktop:text-xl">
-        <p>Name: {name}</p>
-        {board && <p>Board: {board}</p>}
-        {duration && <p>Duration: {duration}</p>}
-        <p>Pass out Year: {passoutyear}</p>
-      </div>
+
+      <Reveal>
+        <div className="flex flex-col gap-2 mobile:text-md desktop:text-lg">
+          <p>Name: {name}</p>
+          {board && <p>Board: {board}</p>}
+          {duration && <p>Duration: {duration}</p>}
+          <p>Pass out Year: {passoutyear}</p>
+        </div>
+      </Reveal>
     </div>
   );
 }

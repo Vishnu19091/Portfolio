@@ -1,5 +1,7 @@
+"use client";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 import ProjectCard from "./ProjectCard";
+import { Reveal } from "@/components/Reveal";
 
 const projects = [
   {
@@ -36,18 +38,20 @@ const projects = [
 export default function Projects() {
   return (
     <article
-      className="min-h-screen pt-15 mx-auto flex flex-col gap-10 desktop:w-[65%] desktop:mx-auto"
+      className="mobile:min-h-[50vh] lmobile:min-h-[50vh] tablet:min-h-[40vh] desktop:min-h-[60vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[75%] desktop:mx-auto"
       id="projects"
     >
       <div className="flex flex-row gap-5 desktop:gap-10 items-center">
         <h3>
           <div className="position:relative;width:fit-content;overflow:hidden">
             <div className="opacity: 1; transform: none;">
-              <span
-                className={`${FriendlyStrangerFont.className} text-red-600 text-5xl desktop:text-8xl`}
-              >
-                Projects
-              </span>
+              <Reveal>
+                <span
+                  className={`${FriendlyStrangerFont.className} text-red-600 mobile:text-4xl desktop:text-[4.25rem]`}
+                >
+                  Projects
+                </span>
+              </Reveal>
             </div>
             <div className="position: absolute; inset: 4px 0px 4px 100%; background: var(--brand); z-index: 20;"></div>
           </div>
