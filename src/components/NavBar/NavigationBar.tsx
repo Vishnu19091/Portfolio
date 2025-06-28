@@ -23,7 +23,13 @@ export default function NavBar() {
         <ul className="flex flex-row gap-4 items-center justify-center">
           {/* HOME */}
           <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
-            <ScrollLink activeClass="active" smooth={true} spy={true} to="home">
+            <ScrollLink
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              to="home"
+              duration={300}
+            >
               <Tooltip message="Home">
                 <img
                   src="/assets/navbar/home.svg"
@@ -40,6 +46,7 @@ export default function NavBar() {
               activeClass="active"
               smooth={true}
               spy={true}
+              duration={300}
               to="about"
             >
               <Tooltip message="About">
@@ -58,6 +65,7 @@ export default function NavBar() {
               activeClass="active"
               smooth={true}
               spy={true}
+              duration={300}
               to="skills"
             >
               <Tooltip message="Skills">
@@ -76,6 +84,7 @@ export default function NavBar() {
               activeClass="active"
               smooth={true}
               spy={true}
+              duration={300}
               to="projects"
             >
               <Tooltip message="Projects">
@@ -94,6 +103,7 @@ export default function NavBar() {
               activeClass="active"
               smooth={true}
               spy={true}
+              duration={300}
               to="education"
             >
               <Tooltip message="Education">
@@ -112,6 +122,7 @@ export default function NavBar() {
               activeClass="active"
               smooth={true}
               spy={true}
+              duration={300}
               to="experience"
             >
               <Tooltip message="Experience">
@@ -130,6 +141,7 @@ export default function NavBar() {
               activeClass="active"
               smooth={true}
               spy={true}
+              duration={300}
               to="contact"
             >
               <Tooltip message="Contact">

@@ -1,4 +1,30 @@
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
+import EducationCard from "./educationCard";
+
+const education = [
+  {
+    name: "Dr.M.G.R.Educational and Research Institute",
+    imgurl: "/assets/logo_college.png",
+    passoutyear: "2025",
+    duration: "2021 - 2025",
+  },
+
+  {
+    name: "M.L.M.Mamallan.matric.hr.sec.school",
+    imgurl: "/assets/school-image.png",
+    board: "State Board HSE +2",
+    passoutyear: "2021",
+    duration: "2020 - 2021",
+  },
+
+  {
+    name: "M.L.M.Mamallan.matric.hr.sec.school",
+    imgurl: "/assets/school-image.png",
+    board: "State Board (SSLC)",
+    passoutyear: "2019",
+    duration: "2018 - 2019",
+  },
+];
 
 export default function Education() {
   return (
@@ -22,7 +48,18 @@ export default function Education() {
         <div className="w-full bg-black dark:bg-white h-px"></div>
       </div>
       <section>
-        <p>Education goes here. Will be updated and finished soon!</p>
+        <div className="grid grid-cols-1 gap-4">
+          {education.map((edu, index) => (
+            <EducationCard
+              key={index}
+              name={edu.name}
+              imgurl={edu.imgurl}
+              board={edu.board}
+              duration={edu.duration}
+              passoutyear={edu.passoutyear}
+            />
+          ))}
+        </div>
       </section>
     </article>
   );

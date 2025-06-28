@@ -13,39 +13,23 @@ const about_details: JSX.Element = (
       </Tooltip>
       <p className="w-[80%] h-fit self-center">
         Hello there I am Vishnu from{" "}
-        <span id="highlight">Kanchipuram (INDIA)</span>. I completed my{" "}
+        <span id="highlight">Kanchipuram, INDIA</span>. I recently completed my{" "}
         <span id="highlight">B. Tech CSE</span>, and I am passionate about
-        building software and websites, and learning more about AI.
+        building Software and Web Technologies, and learning more about AI.
       </p>
     </div>
 
     <p>
-      My strengths include being highly collaborative and drawing energy from
-      team environments, which helps me stay motivated, disciplined, and
-      focused, making to think innovative and give useful solutions.
+      I enjoy continuous learning and adapting to new technologies. And I
+      <span id="highlight">
+        love building fast, scalable, and user-friendlyweb applications
+      </span>{" "}
+      using modern technologies and also learn & experiment stuff about AI.
     </p>
 
     <p>
-      I am also passionate about continuous learning and adapting to new
-      technologies, as I have a strong ability to manage tasks effectively and
-      complete work before deadlines.
-    </p>
-
-    <p>
-      I build fast, scalable, and user-friendlyweb applications using modern
-      technologies and also learn & experiment stuff about AI.
-    </p>
-
-    <p>
-      My <span id="highlight">short-term goal</span> is to become a{" "}
-      <span id="highlight">Full Stack Developer with AI</span> and{" "}
-      <span id="highlight">long-term goal</span> is to be a{" "}
-      <span id="highlight">AI Engineer</span>.
-    </p>
-
-    <p>
-      I always <span id="highlight">learn Linux 🐧 & Networking</span> and
-      experiment random stuff about these.
+      I am always exploring <span id="highlight">Linux 🐧 & Networking</span>{" "}
+      and experiment random stuff about these.
     </p>
   </div>
 );

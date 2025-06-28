@@ -1,23 +1,28 @@
 "use client";
 
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
+import dynamic from "next/dynamic";
 
-import { Typewriter } from "react-simple-typewriter";
+// Lazy load the typewriter to reduce JS blocking render
+const Typewriter = dynamic(
+  () => import("react-simple-typewriter").then((mod) => mod.Typewriter),
+  { ssr: false }
+);
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="flex flex-col w-full mx-auto min-h-screen text-center items-center justify-center"
+      className="flex flex-col w-full mx-auto min-h-screen text-center items-center justify-center px-4"
     >
       <h1
-        className={`${FriendlyStrangerFont.className} mobile:text-5xl desktop:text-8xl font-bold mb-4`}
+        className={`${FriendlyStrangerFont.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl desktop:text-8xl font-bold mb-4 leading-tight`}
       >
         Hi, I'm <span className="text-red-600">Vishnu VT</span>
       </h1>
 
       <h2
-        className={`${FriendlyStrangerFont.className} text-2xl desktop:text-5xl font-medium text-gray-600 dark:text-gray-300 mb-6`}
+        className={`${FriendlyStrangerFont.className} text-xl sm:text-2xl md:text-3xl lg:text-4xl desktop:text-5xl font-medium text-gray-600 dark:text-gray-300 mb-6`}
       >
         I am a&nbsp;
         <span className="text-red-600">
@@ -25,22 +30,22 @@ export default function Hero() {
             words={[
               "Full Stack Developer",
               "Next.js Expert",
-              "Linu Enthusiast 🐧",
+              "Linux Enthusiast 🐧",
               "Backend Engineer",
             ]}
-            loop={true}
+            loop
             cursor
             cursorStyle="|"
-            typeSpeed={70}
-            deleteSpeed={70}
-            delaySpeed={1500}
+            typeSpeed={50}
+            deleteSpeed={60}
+            delaySpeed={800}
           />
         </span>
       </h2>
 
-      <p className="text-md desktop:text-lg max-w-xl text-black/70 dark:text-gray-300">
+      <p className="text-base sm:text-lg md:text-xl max-w-xl text-black/80 dark:text-gray-300">
         I build fast, scalable, and user-friendly web applications using modern
-        technologies and also learn & experiment stuff about AI.
+        technologies — and I love learning & experimenting with AI.
       </p>
     </section>
   );
