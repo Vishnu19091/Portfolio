@@ -38,7 +38,7 @@ export default function SocialsButton() {
       </a>
 
       {/* LEETCODE */}
-      <a href="https://leetcode.com/u/vishnusah368/" target="_blank">
+      <a href="https://leetcode.com/u/vishnuvt1183/" target="_blank">
         <svg
           width="30"
           height="30"
