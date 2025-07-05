@@ -347,7 +347,7 @@ const Tools = [
 export default function Skills() {
   return (
     <article
-      className="scroll-m-60 mobile:min-h-[50vh] lmobile:min-h-[50vh] tablet:min-h-[40vh] desktop:min-h-[80vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[75%] desktop:mx-auto"
+      className="mobile:min-h-[50vh] lmobile:min-h-[50vh] tablet:min-h-[40vh] desktop:min-h-[80vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[75%] desktop:mx-auto"
       id="skills"
     >
       <div className="flex flex-row-reverse gap-5 desktop:gap-10 items-center">

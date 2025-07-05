@@ -28,7 +28,6 @@ export default function NavBar() {
               smooth={true}
               spy={true}
               to="home"
-              offset={-750}
               duration={300}
             >
               <Tooltip message="Home">
@@ -48,7 +47,6 @@ export default function NavBar() {
               smooth={true}
               spy={true}
               duration={300}
-              offset={-750}
               to="about"
             >
               <Tooltip message="About">
@@ -68,7 +66,6 @@ export default function NavBar() {
               smooth={true}
               spy={true}
               duration={300}
-              offset={-750}
               to="skills"
             >
               <Tooltip message="Skills">
@@ -88,7 +85,6 @@ export default function NavBar() {
               smooth={true}
               spy={true}
               duration={300}
-              offset={-750}
               to="projects"
             >
               <Tooltip message="Projects">
@@ -108,7 +104,7 @@ export default function NavBar() {
               smooth={true}
               spy={true}
               duration={300}
-              offset={-750}
+              offset={-300}
               to="education"
             >
               <Tooltip message="Education">
@@ -128,7 +124,6 @@ export default function NavBar() {
               smooth={true}
               spy={true}
               duration={300}
-              offset={-750}
               to="experience"
             >
               <Tooltip message="Experience">
@@ -148,7 +143,7 @@ export default function NavBar() {
               smooth={true}
               spy={true}
               duration={300}
-              offset={-750}
+              offset={-550}
               to="contact"
             >
               <Tooltip message="Contact">

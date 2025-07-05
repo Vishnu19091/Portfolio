@@ -5,7 +5,7 @@ import { Reveal } from "../Reveal";
 export default function Contact() {
   return (
     <article
-      className="scroll-m-60 mobile:min-h-[40vh] lmobile:min-h-[50vh] tablet:min-h-[40vh] desktop:min-h-[60vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[75%] desktop:mx-auto"
+      className="scroll-m-80 mobile:min-h-[40vh] lmobile:min-h-[50vh] tablet:min-h-[40vh] desktop:min-h-[60vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[75%] desktop:mx-auto"
       id="contact"
     >
       <div className="flex flex-row gap-5 desktop:gap-10 items-center">
