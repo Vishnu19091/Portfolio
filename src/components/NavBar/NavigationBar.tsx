@@ -19,15 +19,16 @@ export default function NavBar() {
 
   return (
     <div className="w-full">
-      <div className="mobile:w-[80%] tablet:w-fit desktop:w-fit bottom-6 block fixed left-[50%] -translate-x-[50%] bg-black/30 dark:bg-white/10 rounded-2xl px-6 py-1 backdrop-blur-xl z-30 mx-auto">
+      <div className="mobile:w-[80%] lmobile:w-[56%] tablet:w-fit desktop:w-fit bottom-6 block fixed left-[50%] -translate-x-[50%] bg-black/30 dark:bg-white/10 rounded-2xl px-6 py-1 backdrop-blur-xl z-30 mx-auto">
         <ul className="flex flex-row gap-4 items-center justify-center">
           {/* HOME */}
-          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer ease-in-out">
             <ScrollLink
               activeClass="active"
               smooth={true}
               spy={true}
               to="home"
+              offset={-750}
               duration={300}
             >
               <Tooltip message="Home">
@@ -41,12 +42,13 @@ export default function NavBar() {
           </li>
 
           {/* ABOUT */}
-          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer ease-in-out">
             <ScrollLink
               activeClass="active"
               smooth={true}
               spy={true}
               duration={300}
+              offset={-750}
               to="about"
             >
               <Tooltip message="About">
@@ -60,12 +62,13 @@ export default function NavBar() {
           </li>
 
           {/* SKILLS */}
-          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer ease-in-out">
             <ScrollLink
               activeClass="active"
               smooth={true}
               spy={true}
               duration={300}
+              offset={-750}
               to="skills"
             >
               <Tooltip message="Skills">
@@ -79,12 +82,13 @@ export default function NavBar() {
           </li>
 
           {/* PROJECTS */}
-          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer ease-in-out">
             <ScrollLink
               activeClass="active"
               smooth={true}
               spy={true}
               duration={300}
+              offset={-750}
               to="projects"
             >
               <Tooltip message="Projects">
@@ -98,12 +102,13 @@ export default function NavBar() {
           </li>
 
           {/* EDUCATION */}
-          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer ease-in-out">
             <ScrollLink
               activeClass="active"
               smooth={true}
               spy={true}
               duration={300}
+              offset={-750}
               to="education"
             >
               <Tooltip message="Education">
@@ -117,12 +122,13 @@ export default function NavBar() {
           </li>
 
           {/* EXPERIENCE */}
-          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer ease-in-out">
             <ScrollLink
               activeClass="active"
               smooth={true}
               spy={true}
               duration={300}
+              offset={-750}
               to="experience"
             >
               <Tooltip message="Experience">
@@ -136,12 +142,13 @@ export default function NavBar() {
           </li>
 
           {/* CONTACT */}
-          <li className="hover:scale-110 transition-all duration-300 cursor-pointer">
+          <li className="hover:scale-110 transition-all duration-300 cursor-pointer ease-in-out">
             <ScrollLink
               activeClass="active"
               smooth={true}
               spy={true}
               duration={300}
+              offset={-750}
               to="contact"
             >
               <Tooltip message="Contact">
