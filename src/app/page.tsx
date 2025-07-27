@@ -8,7 +8,7 @@ import Skills from "@/components/UI/skills/skills";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 
 // show status
-const ShowStatus: boolean = true;
+const ShowStatus: boolean = false;
 
 export default function Home() {
   if (ShowStatus) {
@@ -28,7 +28,8 @@ export default function Home() {
     <h1
       className={`${FriendlyStrangerFont.className} text-red-600 pt-20 text-center my-90 text-6xl`}
     >
-      Project is under development.
+      The portfolio is under development. By then you can explore some of my
+      profiles.
     </h1>
   );
 }

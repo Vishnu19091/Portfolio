@@ -1,3 +1,10 @@
+// TODO1: add hackerrank profile
+
+// TODO2: render this component with props,
+// i.e stop creating the components individually
+// instead pass data to this component and let it
+// create the buttons separately
+
 export default function SocialsButton() {
   return (
     <div className="flex flex-row gap-4 items-center justify-center">
