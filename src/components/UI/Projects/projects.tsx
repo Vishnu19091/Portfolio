@@ -6,6 +6,33 @@ import { Reveal } from "@/components/Reveal";
 const projects = [
   {
     images: [
+      "/assets/projects/authpage.png",
+      "/assets/projects/emptypage.png",
+      "/assets/projects/all.png",
+      "/assets/projects/inprog.png",
+      "/assets/projects/done.png",
+    ],
+    title: "Task Management using Nest.js & Next.js",
+    duration: "August 2025",
+    description:
+      "Task management app where authenticated users can create and manage their tasks.",
+    website: "https://task-management-nest-js.vercel.app",
+    repo: "https://github.com/Vishnu19091/Task-Management-NestJS",
+  },
+  {
+    images: [
+      "/assets/projects/portfolio_1.png",
+      "/assets/projects/portfolio_2.png",
+      "/assets/projects/portfolio_3.png",
+    ],
+    title: "My Portfolio",
+    duration: "June 2025",
+    description: "My Portfolio was built using NextJs, TypeScript, React.",
+    website: "#",
+    repo: "https://github.com/Vishnu19091/Portfolio",
+  },
+  {
+    images: [
       "/assets/projects/phishing_detection_1.png",
       "/assets/projects/phishing_detection_2.png",
       "/assets/projects/phishing_detection_3.png",
@@ -19,19 +46,6 @@ const projects = [
     Numeric and special characters HTTPS presence`,
     website: "https://anti-phish.netlify.app/docs",
     repo: "https://github.com/Vishnu19091/Phishing_Detection_using_ML/",
-  },
-
-  {
-    images: [
-      "/assets/projects/portfolio_1.png",
-      "/assets/projects/portfolio_2.png",
-      "/assets/projects/portfolio_3.png",
-    ],
-    title: "My Portfolio",
-    duration: "June 2025",
-    description: "My Portfolio was built using NextJs, TypeScript, React.",
-    website: "#",
-    repo: "https://github.com/Vishnu19091/Portfolio",
   },
 ];
 
