@@ -33,9 +33,8 @@ export default function Hero() {
             <Typewriter
               words={[
                 "Full Stack Developer",
-                "Next.js Expert",
                 "Linux Enthusiast 🐧",
-                "Backend Engineer",
+                "Computernik",
               ]}
               loop
               cursor
@@ -46,13 +45,6 @@ export default function Hero() {
             />
           </span>
         </h2>
-      </Reveal>
-
-      <Reveal>
-        <p className="text-base sm:text-lg md:text-xl max-w-xl text-black/80 dark:text-gray-300">
-          I build fast, scalable, and user-friendly web applications using
-          modern technologies — and I love learning & experimenting with AI.
-        </p>
       </Reveal>
     </section>
   );
