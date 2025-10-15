@@ -3,7 +3,7 @@ export default function Tooltip({
   children,
 }: {
   message: string;
-  children: any;
+  children: React.ReactNode;
 }) {
   return (
     <div className="group relative flex max-w-max flex-col items-center justify-center">

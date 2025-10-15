@@ -6,11 +6,11 @@ import { Reveal } from "@/components/Reveal";
 const projects = [
   {
     images: [
-      "/assets/projects/authpage.png",
-      "/assets/projects/emptypage.png",
-      "/assets/projects/all.png",
-      "/assets/projects/inprog.png",
-      "/assets/projects/done.png",
+      "/assets/projects/Task-management/authpage.png",
+      "/assets/projects/Task-management/emptypage.png",
+      "/assets/projects/Task-management/all.png",
+      "/assets/projects/Task-management/inprog.png",
+      "/assets/projects/Task-management/done.png",
     ],
     title: "Task Management using Nest.js & Next.js",
     duration: "August 2025",
@@ -21,31 +21,30 @@ const projects = [
   },
   {
     images: [
-      "/assets/projects/portfolio_1.png",
-      "/assets/projects/portfolio_2.png",
-      "/assets/projects/portfolio_3.png",
+      "/assets/projects/portfolio/portfolio_1.png",
+      "/assets/projects/portfolio/portfolio_2.png",
+      "/assets/projects/portfolio/portfolio_3.png",
     ],
     title: "My Portfolio",
     duration: "June 2025",
-    description: "My Portfolio was built using NextJs, TypeScript, React.",
+    description: "My Portfolio built using NextJs, TypeScript, React.",
     website: "#",
     repo: "https://github.com/Vishnu19091/Portfolio",
   },
   {
     images: [
-      "/assets/projects/phishing_detection_1.png",
-      "/assets/projects/phishing_detection_2.png",
-      "/assets/projects/phishing_detection_3.png",
+      "/assets/projects/Extension/Blocked_Domain_Page.png",
+      "/assets/projects/Extension/Network_Logger.png",
+      "/assets/projects/Extension/Pop-up-window.png",
+      "/assets/projects/Extension/Blocked-site.png",
     ],
-    title: "Phishing Detection",
-    duration: "Nov 2024 - March 2025",
+    title: "Phishing Detection Extension",
+    duration: "April 2025 - Present",
     description: `This is a browser extension-based project which detects phishing websites
-    in real-time and alerts the user. integrates machine learning models to effectively
-    identify and prevent phishing attacks, spam, and defaced websites. The system is
-    designed to analyze key URL features such as: URL length Domain and subdomain structure
-    Numeric and special characters HTTPS presence`,
-    website: "https://anti-phish.netlify.app/docs",
-    repo: "https://github.com/Vishnu19091/Phishing_Detection_using_ML/",
+    in real-time and alerts the user, uses rule-based approach to effectively identify and
+    prevent phishing attacks, spam, and defaced websites. Users can also block and manage custom domains`,
+    website: "https://addons.mozilla.org/addon/anti-phishing-extension/",
+    repo: "https://github.com/Vishnu19091/Phishing_Detection_Extension/",
   },
 ];
 

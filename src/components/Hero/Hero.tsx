@@ -20,7 +20,7 @@ export default function Hero() {
         <h1
           className={`${FriendlyStrangerFont.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl desktop:text-8xl font-bold mb-4 leading-tight`}
         >
-          Hi, I'm <span className="text-red-600">Vishnu VT</span>
+          Hi, I&apos;m <span className="text-red-600">Vishnu VT</span>
         </h1>
       </Reveal>
 
