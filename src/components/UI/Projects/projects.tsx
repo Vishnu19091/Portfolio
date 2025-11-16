@@ -36,6 +36,7 @@ const projects = [
       "/assets/projects/Extension/Blocked_Domain_Page.png",
       "/assets/projects/Extension/Network_Logger.png",
       "/assets/projects/Extension/Pop-up-window.png",
+      "/assets/projects/Extension/Pop-up-window-with-menu.png",
       "/assets/projects/Extension/Blocked-site.png",
     ],
     title: "Phishing Detection Extension",
