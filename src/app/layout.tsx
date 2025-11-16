@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Ubuntu_Sans_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar/NavigationBar";
 import { ThemeProvider } from "@/components/theme-provider";
 import SocialsBar from "@/components/SocialsBar/SocialsBar";
 
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="" lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={`${ubuntu_Sans_Mono.className} antialiased`}>
         <ThemeProvider
           attribute="class"
@@ -30,7 +29,6 @@ export default function RootLayout({
         >
           {children}
           <SocialsBar />
-          <NavBar />
         </ThemeProvider>
       </body>
     </html>

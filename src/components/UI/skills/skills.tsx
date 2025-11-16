@@ -1,7 +1,7 @@
 "use client";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
 import SkillCard from "./skillcard";
-import Tooltip from "@/components/NavBar/tooltip";
+import Tooltip from "@/components/SocialsBar/tooltip";
 import { Reveal } from "@/components/Reveal";
 
 const skills = [
