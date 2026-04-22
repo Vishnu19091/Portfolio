@@ -2,7 +2,7 @@ import { Reveal } from "@/components/Reveal";
 import React from "react";
 
 interface Prop {
-  title: String;
+  title: string;
   children: React.ReactNode;
 }
 
