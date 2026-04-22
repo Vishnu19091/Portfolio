@@ -8,9 +8,9 @@ const about_details: JSX.Element = (
     <Reveal>
       <p>
         Hello, I am Vishnu from <span id="highlight">Kanchipuram, INDIA</span>.
-        I recently completed my <span id="highlight">B. Tech CSE</span>, and I
-        am passionate about building applications and contributing to
-        open-source projects.
+        I completed my <span id="highlight">B. Tech CSE</span>, and I am
+        passionate about building applications and contributing to open-source
+        projects.
       </p>
     </Reveal>
 

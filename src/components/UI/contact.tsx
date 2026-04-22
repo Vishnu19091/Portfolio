@@ -27,7 +27,10 @@ export default function Contact() {
       </div>
       <section>
         <h1 className="text-center mobile:text-md desktop:text-xl flex flex-col gap-5">
-          If want to contact email me or DM my social accounts.
+          <b>
+            Open to collaborate <span className="animate-pulse">:)</span>
+          </b>
+          <span className="animate-bounce">👇</span>
           <span>
             <a
               className="border border-red-600 hover:bg-red-600 text-black dark:text-white px-4 py-2 rounded-xl w-fit transition-all duration-300 cursor-pointer"
