@@ -28,7 +28,7 @@ export default function OActivities() {
           <div className="mobile:w-[63%] lmobile:w-[80%] tablet:w-[87%] desktop:w-[70%] ldesktop:w-[75.5%] laptop:w-[78.5%] bg-black dark:bg-white h-px"></div>
         </div>
 
-        <OACbutton name="View my 3D project works" ul="" />
+        <OACbutton name="View my 3D project works" />
       </article>
     </>
   );
@@ -36,10 +36,9 @@ export default function OActivities() {
 
 interface Prop {
   name: string;
-  ul: string;
 }
 
-export function OACbutton({ name, ul }: Prop) {
+export function OACbutton({ name }: Prop) {
   const onButtonClick = () => {
     const url = "/3D";
     const link = document.createElement("a");

@@ -4,7 +4,6 @@ import SkillCard from "./skillcard";
 import Tooltip from "@/components/SocialsBar/tooltip";
 import { Reveal } from "@/components/Reveal";
 import SkillSec from "./skillsec";
-import BlenderLogo from "../../../../public/blender_logo.svg";
 
 const skills = [
   {

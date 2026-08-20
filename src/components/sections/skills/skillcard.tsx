@@ -3,7 +3,7 @@ import { JSX } from "react";
 
 interface Prop {
   icon: JSX.Element;
-  name?: String;
+  name?: string;
   level?: number;
 }
 
