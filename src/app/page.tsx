@@ -1,11 +1,12 @@
-import About from "@/components/UI/About/About";
-import Contact from "@/components/UI/contact";
-import Education from "@/components/UI/Education/education";
+import About from "@/components/sections/About/About";
+import Contact from "@/components/sections/contact";
+import Education from "@/components/sections/Education/education";
 // import Experience from "@/components/UI/experience";
 import Hero from "@/components/Hero/Hero";
-import Projects from "@/components/UI/Projects/projects";
-import Skills from "@/components/UI/skills/skills";
+import Projects from "@/components/sections/Projects/projects";
+import Skills from "@/components/sections/skills/skills";
 import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
+import OActivities from "@/components/otherActivities/OActivities";
 
 // show status
 const ShowStatus: boolean = true;
@@ -20,6 +21,7 @@ export default function Home() {
         <Projects />
         <Education />
         {/* <Experience /> */}
+        <OActivities />
         <Contact />
       </div>
     );

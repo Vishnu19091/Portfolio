@@ -1,0 +1,59 @@
+"use client";
+import { FriendlyStrangerFont } from "@/fonts/FriendlyStranger";
+import { Reveal } from "../Reveal";
+
+export default function OActivities() {
+  return (
+    <>
+      <article
+        className="mobile:min-h-[50vh] lmobile:min-h-[50vh] tablet:min-h-[40vh] desktop:min-h-[60vh] pt-15 mx-auto flex flex-col gap-10 desktop:w-[75%] desktop:mx-auto"
+        id="about"
+      >
+        <div className="flex flex-row gap-5 desktop:gap-10 items-center">
+          <h3>
+            <div className="relative w-[100%] overflow-hidden">
+              <div className="opacity: 1; transform: none;">
+                {/* HEADING */}
+                <Reveal>
+                  <span
+                    className={`${FriendlyStrangerFont.className} text-red-600 mobile:text-4xl desktop:text-[4.5rem]`}
+                  >
+                    Other Activities & Interests
+                  </span>
+                </Reveal>
+              </div>
+              <div className="position: absolute; inset: 4px 0px 4px 100%; background: var(--brand); z-index: 20;"></div>
+            </div>
+          </h3>
+          <div className="mobile:w-[63%] lmobile:w-[80%] tablet:w-[87%] desktop:w-[70%] ldesktop:w-[75.5%] laptop:w-[78.5%] bg-black dark:bg-white h-px"></div>
+        </div>
+
+        <OACbutton name="View my 3D project works" ul="" />
+      </article>
+    </>
+  );
+}
+
+interface Prop {
+  name: string;
+  ul: string;
+}
+
+export function OACbutton({ name, ul }: Prop) {
+  const onButtonClick = () => {
+    const url = "/3D";
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_self";
+    link.click();
+  };
+
+  return (
+    <button
+      className={` ${FriendlyStrangerFont.className} w-fit mx-auto mobile:text-xl dekstop:text-3xl text-red-600 border border-red-600 px-5 py-2 rounded-2xl hover:bg-red-600 hover:text-white hover:font-extrabold scale-150 cursor-pointer transition-all duration-300 ease-in-out`}
+      onClick={onButtonClick}
+    >
+      {name}
+    </button>
+  );
+}
